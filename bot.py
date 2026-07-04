@@ -9,7 +9,7 @@ DISCORD_TOKEN = os.environ.get("DISCORD_TOKEN", "PASTE_YOUR_DISCORD_TOKEN_HERE")
 
 intents = discord.Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix="!", intents=intents)
+bot = commands.Bot(command_prefix="!", intents=intents, help_command=None)
 
 active_sessions = {}
 
